@@ -11,13 +11,63 @@ body {
     ". footer footer footer footer .";
 }
 
+a {
+  color: #08c;
+  text-decoration: none;
+  font-size: .8334em;
+}
+
 header {
   grid-area: header;
   background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg)
     bottom right no-repeat;
   background-size: cover;
   height: 100%;
+
+ 
+  
 }
+
+nav {
+  margin-top: 8%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+form {
+  display: flex;
+  justify-items: center;
+  border: none;
+  width: 100%;
+  margin-left: 14%;
+
+}
+
+form > input, button {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: gray;
+  padding: 10px 30px 10px 30px;
+  width: 8%;
+  border: 1px solid darkgray;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  
+
+}
+
+form > button {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 25px;
+  padding: 0;
+}
+
+form > :last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 
 h1,
 h2,
@@ -31,8 +81,9 @@ h1 >img {
 }
 
 section {
-  border: 2px solid white;
+  border: 1px solid white;
 }
+
 
 #section-1 {
   grid-area: section1;
@@ -70,7 +121,37 @@ footer {
   grid-area: footer;
   height: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 12%;
+  align-items: baseline;  
+  width: 100%;
+}
+
+#footer-links a {
+  
+  border-right: 1px solid #08c;
+  padding-right: 1%;
+  padding-left: .5%;
+  
+}
+
+#footer-copyright {
+   flex: 1
+}
+
+#footer-copyright > :nth-child(2) :last-child {
+  border-left: 1px solid #08c;
+  padding-left: 1%;
+  margin-left: 1%;
+}
+
+#title-links {
+  margin-top: 5%;
+}
+
+#footer-links :last-child{
+  border-right:none;
+}
+
+#footer-links {
+  flex: 1;
+  float:left;
 }
