@@ -8,7 +8,7 @@ body {
   display: grid;
   grid-template-rows: 70% 20% 10%;
   grid-template-columns: 12% 19% 19% 19% 19% 12%;
-  grid-template-areas: ". header header header header ."  ". section1 section2 section3 section4 ." ". footer footer footer footer .";
+  grid-template-areas: ". header header header header ." ". section1 section2 section3 section4 ." ". footer footer footer footer .";
 }
 
 a {
@@ -30,18 +30,17 @@ nav {
   padding-bottom: 0;
 }
 
-form {
+ul {
   display: flex;
-  justify-content: center;
   border: none;
   height: 35px;
   margin: 0 15%;
   width: auto;
 }
 
-form > input,
-form > button,
-form > div {
+li {
+  display: flex;
+  justify-content: center;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-image: linear-gradient(rgb(36.9%, 36.9%, 36.9%), rgb(48.3%, 48.3%, 48.3%));
   background-position-y: 18px;
@@ -49,20 +48,14 @@ form > div {
   color: white;
   font-size: 14px;
   flex: 1;
+  align-items: center;
 }
 
-button > i {
+li:first-child {
   font-size: 25px;
 }
 
-form > div {
-  display: flex;
-  align-items: center;
-  width: auto;
-  flex: 2;
-}
-
-form > div > input {
+li input {
   width: 90%;
   border: 1px solid rgb(36.9%, 36.9%, 36.9%);
   border-radius: 10px;
@@ -71,18 +64,18 @@ form > div > input {
   padding-left: 21%;
 }
 
-form > div > i {
+ul > :last-child > i {
   position: relative;
   left: 10px;
   width: fit-content;
 }
 
-form > :last-child {
+ul > :last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-form > :first-child {
+ul > :first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -195,6 +188,6 @@ button:hover {
   background-image: linear-gradient(gray, darkgray);
 }
 
-form > div > input:focus {
+ul input:focus {
   background-image: linear-gradient(white, gray);
 }
