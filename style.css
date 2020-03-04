@@ -59,7 +59,6 @@ li a {
   text-align: center;
 }
 
-
 li:first-child {
   font-size: 25px;
   color: white;
@@ -193,7 +192,6 @@ footer a:hover {
 li:hover {
   background-image: linear-gradient(gray, darkgray);
 }
-
 
 ul input:focus {
   background-image: linear-gradient(white, gray);
