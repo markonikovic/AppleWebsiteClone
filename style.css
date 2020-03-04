@@ -11,7 +11,7 @@ body {
   grid-template-areas: ". header header header header ." ". section1 section2 section3 section4 ." ". footer footer footer footer .";
 }
 
-a {
+footer a {
   color: #08c;
   text-decoration: none;
   font-size: 0.8334em;
@@ -41,18 +41,28 @@ ul {
 li {
   display: flex;
   justify-content: center;
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-image: linear-gradient(rgb(36.9%, 36.9%, 36.9%), rgb(48.3%, 48.3%, 48.3%));
   background-position-y: 18px;
   border: 1px solid rgb(36.9%, 36.9%, 36.9%);
-  color: white;
-  font-size: 14px;
   flex: 1;
   align-items: center;
 }
 
+li a {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  height: auto;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+
 li:first-child {
   font-size: 25px;
+  color: white;
 }
 
 li input {
@@ -180,13 +190,10 @@ footer a:hover {
   height: 100%;
 }
 
-input[type="button"]:hover {
+li:hover {
   background-image: linear-gradient(gray, darkgray);
 }
 
-button:hover {
-  background-image: linear-gradient(gray, darkgray);
-}
 
 ul input:focus {
   background-image: linear-gradient(white, gray);
