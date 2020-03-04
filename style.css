@@ -1,0 +1,198 @@
+html {
+  height: 100%;
+}
+
+body {
+  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 70% 20% 10%;
+  grid-template-columns: 12% 19% 19% 19% 19% 12%;
+  grid-template-areas: ". header header header header ." ". section1 section2 section3 section4 ." ". footer footer footer footer .";
+}
+
+footer a {
+  color: #08c;
+  text-decoration: none;
+  font-size: 0.8334em;
+}
+
+header {
+  grid-area: header;
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) bottom right no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+nav {
+  margin-top: 5.9%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+ul {
+  display: flex;
+  border: none;
+  height: 35px;
+  margin: 0 15%;
+  width: auto;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgb(36.9%, 36.9%, 36.9%), rgb(48.3%, 48.3%, 48.3%));
+  background-position-y: 18px;
+  border: 1px solid rgb(36.9%, 36.9%, 36.9%);
+  flex: 1;
+  align-items: center;
+}
+
+li a {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  height: auto;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+li:first-child {
+  font-size: 25px;
+  color: white;
+}
+
+li input {
+  width: 90%;
+  border: 1px solid rgb(36.9%, 36.9%, 36.9%);
+  border-radius: 10px;
+  background-color: inherit;
+  margin-left: -7%;
+  padding-left: 21%;
+}
+
+ul > :last-child > i {
+  position: relative;
+  left: 10px;
+  width: fit-content;
+}
+
+ul > :last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+ul > :first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 > img {
+  width: 980px;
+  height: 104px;
+}
+
+#section-1 {
+  grid-area: section1;
+  background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5s.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-left: none;
+  border-bottom: none;
+}
+
+#section-2 {
+  grid-area: section2;
+  background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5c.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-bottom: none;
+}
+
+#section-3 {
+  grid-area: section3;
+  background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_30_years.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-bottom: none;
+}
+
+#section-4 {
+  grid-area: section4;
+  background-image: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_supplier_responsibility.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-right: none;
+  border-bottom: none;
+}
+
+footer {
+  grid-area: footer;
+  height: 100%;
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#footer-links a {
+  border-right: 1px solid #08c;
+  padding-right: 1%;
+  padding-left: 0.5%;
+}
+
+#footer-copyright {
+  flex: 1;
+  text-align: center;
+}
+
+#footer-links :last-child {
+  border-right: none;
+}
+
+#footer-copyright > :nth-child(2) :last-child {
+  border-left: 1px solid #08c;
+  padding-left: 1%;
+  margin-left: 1%;
+}
+
+#title-links {
+  margin-top: 5%;
+}
+
+#footer-links {
+  flex: 1;
+  float: left;
+}
+
+#section-1 a,
+#section-2 a,
+#section-3 a,
+#section-4 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+li:hover {
+  background-image: linear-gradient(gray, darkgray);
+}
+
+ul input:focus {
+  background-image: linear-gradient(white, gray);
+}
